@@ -1,0 +1,76 @@
+/* Основные стили */
+html, body {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f5ebe0;
+    color: #333;
+	display: flex;
+    flex-direction: column;
+}
+
+/* Фон главной страницы */
+.intro {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.intro .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    padding: 60px;
+}
+
+/* Карточки на главной странице */
+.features .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.features .card-title {
+    color: #ff6600;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: auto;
+}
+
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .features {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .features .col {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.personal-info-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
